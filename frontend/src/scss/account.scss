@@ -1,0 +1,198 @@
+/* ======== Account component style ======= */
+
+.account-section {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+}
+
+.acoount-row {
+    margin: 0;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.account-col {
+    @include FLEX;
+    flex-direction: column;
+    height: 100%;
+}
+
+.brand-logo {
+    width: 90%;
+    @include FLEX;
+    margin-bottom: 24px;
+}
+
+.brand-logo img {
+    width: 42px;
+}
+
+.brand-logo p {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: $black-color;
+    margin-left: 12px;
+}
+
+.account-col form {
+    width: 50%;
+}
+
+.form-title {
+    @include FLEX;
+    flex-direction: column;
+}
+
+.form-title p {
+    font-weight: 600;
+    font-size: 34px;
+    letter-spacing: -0.02em;
+    color: $black-color;
+    margin-bottom: 0.3rem;
+}
+
+.form-title span {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: $gray-color;
+}
+
+.form-inputs {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inputs label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: $black-color;
+    margin-bottom: 6px;
+}
+
+.form-inputs span {
+    font-size: 12px;
+    padding-top: 3px;
+    color: red;
+}
+
+.form-inputs input,
+.form-inputs select {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    padding: 14px;
+    border: 1px solid $gray-color;
+    border-radius: 6px;
+    outline: none;
+    background-color: #fff;
+}
+
+.form-submit-div {
+    margin-top: 24px;
+}
+
+.form-submit-div button {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: $blue-color;
+    padding: 12px 0;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: $white-color;
+    box-shadow: 0px 4px 16px rgba(30, 90, 249, 0.25);
+    border-radius: 6px;
+}
+
+.google-signin button {
+    background-color: $white-color;
+    color: $black-color;
+    @include FLEX;
+}
+
+.account-redirect {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.account-redirect p {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: $black-color;
+}
+
+.account-redirect p a {
+    font-weight: 600;
+    color: $blue-color;
+    text-decoration: none;
+}
+
+.account-right-col {
+    background-image: url("/circle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.account-image-banner {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    border: 1px solid $white-color;
+    background: linear-gradient(104.51deg, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0.07) 99.58%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(20px);
+    padding: 4px 24px;
+}
+
+.account-image-banner p {
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    color: $white-color;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.account-forgot {
+    text-align: end;
+    margin-top: 24px;
+}
+
+.account-forgot a {
+    text-decoration: none;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: $blue-color;
+}
+
+@media screen and (max-width: 1200px) {
+    .account-col form {
+        width: 65%;
+    }
+
+    .account-image-banner p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .account-col form {
+        width: 90%;
+    }
+}
+
+/* ******** End - Account component style ******** */

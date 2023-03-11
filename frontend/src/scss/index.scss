@@ -1,0 +1,23 @@
+// Sass files
+@import 'variable';
+@import 'mixing';
+
+@import 'account';
+@import 'header';
+@import 'videos';
+@import 'comments';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+body {
+    background: $white-color;
+}
+
+a {
+    text-decoration: none;
+}

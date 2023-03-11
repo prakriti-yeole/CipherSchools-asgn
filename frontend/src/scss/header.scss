@@ -1,0 +1,107 @@
+/* ======== Header component style ======= */
+
+.header-section {
+    width: 100vw;
+    background-color: $white-color-2;
+    height: 72px;
+    box-shadow: 0px 5px 43px 12px rgba(0, 0, 0, 0.1);
+
+    & .header-main {
+        height: 100%;
+        width: 100%;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .header-logo {
+            @include FLEX();
+            justify-content: flex-start;
+
+            & a {
+                & p {
+                    margin-bottom: 0;
+                    color: $blue-color;
+                    font-size: 18px;
+                    font-weight: 800;
+                }
+
+                & img {
+                    width: 42px;
+                }
+            }
+
+        }
+
+        & .header-list {
+            display: flex;
+
+            & .header-listitem {
+                display: flex;
+                align-items: center;
+                padding: 8px 24px;
+                color: $black-color;
+                border-radius: 12px;
+
+                & p {
+                    margin-bottom: 0;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                &:hover {
+                    background-color: $white-color-2;
+                }
+            }
+        }
+
+        & .header-user {
+            @include FLEX();
+            cursor: pointer;
+            // padding-right: 12px;
+
+            & .user-icon img {
+                margin-right: 8px;
+                width: 32px;
+            }
+
+            & .user-details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                & .greeting {
+                    font-size: 13px;
+                    font-weight: 800;
+
+                    & img {
+                        width: 20px;
+                        padding-bottom: 6px;
+                    }
+                }
+
+                & .user-email {
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-top: -4px;
+                }
+            }
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+@media screen and (max-width: 577px) {
+    .header-section {
+        height: 58px;
+
+        & .header-main .header-list .header-listitem {
+            padding: 4px 12px;
+        }
+    }
+}
+
+/* ******** End - Header component style ******** */

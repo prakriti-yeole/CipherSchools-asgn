@@ -1,0 +1,140 @@
+/* ======== Comments component style ======= */
+
+.comment-section {
+    margin-top: 24px;
+
+    & .comment-heading {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    & .comment-div {
+        & form {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            & input {
+                width: 90%;
+                font-weight: 400;
+                font-size: 14px;
+                letter-spacing: -0.02em;
+                padding: 12px;
+                border: 1px solid $gray-color;
+                border-radius: 6px 0 0 6px;
+                outline: none;
+                background-color: #fff;
+                box-shadow: 0px 4px 16px rgba(30, 90, 249, 0.1);
+            }
+
+            & button {
+                width: 10%;
+                outline: none;
+                border: none;
+                background-color: $blue-color;
+                padding: 11px;
+                font-weight: 700;
+                font-size: 16px;
+                letter-spacing: -0.02em;
+                color: $white-color;
+                box-shadow: 0px 4px 16px rgba(30, 90, 249, 0.1);
+                border-radius: 0px 6px 6px 0px;
+            }
+        }
+
+        & .comments {
+            margin: 24px 0;
+
+            & .new-comment {
+                display: flex;
+                flex-direction: column;
+
+                & .name {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+
+                & .user-comment {
+                    font-size: 14px;
+                    color: $black-color;
+                    margin-bottom: 4px;
+                    text-align: justify;
+                }
+
+                & .replay-div {
+                    width: fit-content;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    border-radius: 25px;
+                    padding: 4px 8px;
+                    border: 1px solid $white-color;
+
+                    & img {
+                        width: 20px;
+                        margin-right: 8px;
+                    }
+
+                    & span {
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        background-color: $white-color;
+                    }
+                }
+
+                & .reply-comment {
+                    padding-left: 24px;
+
+                    & .name {
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+
+        & .comment-error button {
+            width: fit-content;
+            outline: none;
+            border: none;
+            background-color: $blue-color;
+            padding: 12px 16px;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: -0.02em;
+            color: $white-color;
+            box-shadow: 0px 4px 16px rgba(30, 90, 249, 0.25);
+            border-radius: 6px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .comment-section {
+        & .comment-div {
+            & form {
+                & input {
+                    width: 70%;
+                }
+
+                & button {
+                    width: 30%;
+                }
+            }
+
+            & .comment-error button {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/* ******** End - Comments component style ******** */
